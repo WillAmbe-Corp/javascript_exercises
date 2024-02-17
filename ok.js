@@ -191,118 +191,118 @@ console.log(inventory[0].cost);
 
 /*------------------------------------CHAPTER 4 WORK------------------------------------*/
 
-//Ex 4.1
-// let bool = false;
-// console.log(bool);
-// if(bool){
-//     console.log("You are really lazy dude, got to start working now so as to start earning ASAP");
-// }
-// if (!bool){
-//     console.log("That's good keep up with the spirit consistency is the key");
-// }
+Ex 4.1
+let bool = false;
+console.log(bool);
+if(bool){
+    console.log("You are really lazy dude, got to start working now so as to start earning ASAP");
+}
+if (!bool){
+    console.log("That's good keep up with the spirit consistency is the key");
+}
 
-// //Ex 4.2
+//Ex 4.2
 
-// let usrAge = prompt("Please enter your age");
-//  usrAge = Number(usrAge);
-//  let msgVariable;
-//  if (usrAge => 21){
-//     msgVariable = "Welcome to our palace, feel free to command any wine of your choice.";
-//  }
-//  else if (usrAge => 19){
-//     msgVariable = "Welcome to our palace, you are free to command any non alcoholic drink of your choice.";
-//  }
-//  else {
-//     msgVariable = "Sorry we can't permit you into our palace since you are below 19 years which is the minimum age for any individual entering here.";
-//  }
-//  console.log(msgVariable);
+let usrAge = prompt("Please enter your age");
+ usrAge = Number(usrAge);
+ let msgVariable;
+ if (usrAge => 21){
+    msgVariable = "Welcome to our palace, feel free to command any wine of your choice.";
+ }
+ else if (usrAge => 19){
+    msgVariable = "Welcome to our palace, you are free to command any non alcoholic drink of your choice.";
+ }
+ else {
+    msgVariable = "Sorry we can't permit you into our palace since you are below 19 years which is the minimum age for any individual entering here.";
+ }
+ console.log(msgVariable);
 
-//  //Ex 4.3
+ //Ex 4.3
 
-//  let ID = true;
-//   !ID? console.log("Welcome sir how can we help you today") : console.log("Sorry but we can\'t let you in due to authentication failure.");
+ let ID = true;
+  !ID? console.log("Welcome sir how can we help you today") : console.log("Sorry but we can\'t let you in due to authentication failure.");
 
-// //4.4
+//4.4
 
-// let rndmNumber = Math.floor(Math.random() * 6);
-// let question = prompt("Ask any question...");
-// let answer;
+let rndmNumber = Math.floor(Math.random() * 6);
+let question = prompt("Ask any question...");
+let answer;
 
-// switch (rndmNumber) {
-//     case 0: answer ="Seek first the kingdom of God and it's righteousness and any other thing shall be granted to you.";
-//            break;
-//     case 1: answer ="That isn't important for the moment, ";
-//     break;
-//     case 2: answer ="Don't even dream about that.";
-//      break;
-//     case 3: answer ="LOL you think you can ever, hahahaha";
-//      break;
-//     case 4: answer ="You way wowo so want do wety witam?";
-//      break;
-//     case 5: answer ="Keep on dreaming";
-//      break;
-//     }
+switch (rndmNumber) {
+    case 0: answer ="Seek first the kingdom of God and it's righteousness and any other thing shall be granted to you.";
+           break;
+    case 1: answer ="That isn't important for the moment, ";
+    break;
+    case 2: answer ="Don't even dream about that.";
+     break;
+    case 3: answer ="LOL you think you can ever, hahahaha";
+     break;
+    case 4: answer ="You way wowo so want do wety witam?";
+     break;
+    case 5: answer ="Keep on dreaming";
+     break;
+    }
 
-//     console.log("You asked", question, "Your answer is", answer);
+    console.log("You asked", question, "Your answer is", answer);
 
-//     //Chapter Project 1
+    //Chapter Project 1
 
-// let userNumber = Number(prompt("Enter a number"));    
-// let myNumber = 5;
-// if (userNumber < myNumber){
-//     console.log(userNumber + " is smaller than " + myNumber);
-// }
-// else if (userNumber > myNumber){
-//     console.log(userNumber + " is greater than " + myNumber);
-// }
-// else{
-//     console.log(userNumber + " is equal to " + myNumber);
-// }
+let userNumber = Number(prompt("Enter a number"));    
+let myNumber = 5;
+if (userNumber < myNumber){
+    console.log(userNumber + " is smaller than " + myNumber);
+}
+else if (userNumber > myNumber){
+    console.log(userNumber + " is greater than " + myNumber);
+}
+else{
+    console.log(userNumber + " is equal to " + myNumber);
+}
 
-// // Chapter Project 2
+// Chapter Project 2
 
-// let usrName = prompt("Who do you think my friend is?");
-// // let myFriends = ['Smith', 'Liza', 'Grace', 'Jospen', 'Jerry', 'Pride'];
-//     switch (usrName){
-//         case 'Smith': console.log("A good all friend of mine"); 
-//         break;
-//         case 'Liza': console.log("A sweet and lovely friend of mine"); 
-//         break;
-//         case 'Grace': console.log("The latest Bob Marley in town"); 
-//         break;
-//         case 'Jospen': console.log("My gee"); 
-//         break;
-//         case 'Jerry': console.log("My knonji friend"); 
-//         break;
-//         case 'Pride': console.log("A friend and a brother"); 
-//         break;
-//         default: console.log("Either I didn't mention that person or the person isn't my friend"); 
-//     }
+let usrName = prompt("Who do you think my friend is?");
+// let myFriends = ['Smith', 'Liza', 'Grace', 'Jospen', 'Jerry', 'Pride'];
+    switch (usrName){
+        case 'Smith': console.log("A good all friend of mine"); 
+        break;
+        case 'Liza': console.log("A sweet and lovely friend of mine"); 
+        break;
+        case 'Grace': console.log("The latest Bob Marley in town"); 
+        break;
+        case 'Jospen': console.log("My gee"); 
+        break;
+        case 'Jerry': console.log("My knonji friend"); 
+        break;
+        case 'Pride': console.log("A friend and a brother"); 
+        break;
+        default: console.log("Either I didn't mention that person or the person isn't my friend"); 
+    }
 
-//     //Chapter Project 3
-//     let game = ["Rock", 'Paper', 'Scissors'];
-//     let playerSelection = Math.floor(Math.random()*3);
-//     let computerSelection = Math.floor(Math.random()*3);
-//     let gameResults;
-//     if (playerSelection == computerSelection){
-//         gameResults = "It's a tie";
-//     }
-//     else if (playerSelection < computerSelection){
-//         if (computerSelection == 0){
-//             gameResults = "The computer wins";
-//         }
-//         else {
-//             gameResults = "The player wins";
-//         }
-//     }
-//     else {
-//         gameResults = "The player wins";
-//     }
+    //Chapter Project 3
+    let game = ["Rock", 'Paper', 'Scissors'];
+    let playerSelection = Math.floor(Math.random()*3);
+    let computerSelection = Math.floor(Math.random()*3);
+    let gameResults;
+    if (playerSelection == computerSelection){
+        gameResults = "It's a tie";
+    }
+    else if (playerSelection < computerSelection){
+        if (computerSelection == 0){
+            gameResults = "The computer wins";
+        }
+        else {
+            gameResults = "The player wins";
+        }
+    }
+    else {
+        gameResults = "The player wins";
+    }
     
-//     console.log("The player choosed "+playerSelection, "and the computer choosed "+computerSelection, "hence "+gameResults);
+    console.log("The player choosed "+playerSelection, "and the computer choosed "+computerSelection, "hence "+gameResults);
 
 
-// /*------------------------------------CHAPTER 6 WORK------------------------------------*/
+/*------------------------------------CHAPTER 6 WORK------------------------------------*/
 
 // //Ex 6.1
 
