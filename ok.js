@@ -191,7 +191,7 @@ console.log(inventory[0].cost);
 
 /*------------------------------------CHAPTER 4 WORK------------------------------------*/
 
-Ex 4.1
+// Ex 4.1
 let bool = false;
 console.log(bool);
 if(bool){
@@ -284,22 +284,27 @@ let usrName = prompt("Who do you think my friend is?");
     let playerSelection = Math.floor(Math.random()*3);
     let computerSelection = Math.floor(Math.random()*3);
     let gameResults;
-    if (playerSelection == computerSelection){
-        gameResults = "It's a tie";
+   if (playerSelection === computerSelection) {
+    gameResults = "It's a tie";
+   }
+   else if (playerSelection < computerSelection) {
+    if ((playerSelection === 0 && computerSelection === 2)){
+        gameResults = "You win!";
     }
-    else if (playerSelection < computerSelection){
-        if (computerSelection == 0){
-            gameResults = "The computer wins";
-        }
-        else {
-            gameResults = "The player wins";
-        }
+    else{
+        gameResults = "You lose!";
     }
-    else {
-        gameResults = "The player wins";
+   }
+   else{
+    if (playerSelection === 2 && computerSelection == 0){
+        gameResults = "You lose!";
     }
+    else{
+        gameResults = "You win!";
+    }
+   }
     
-    console.log("The player choosed "+playerSelection, "and the computer choosed "+computerSelection, "hence "+gameResults);
+    console.log("The player choosed "+game[playerSelection], "and the computer choosed "+game[computerSelection], "hence "+gameResults);
 
 
 /*------------------------------------CHAPTER 6 WORK------------------------------------*/
