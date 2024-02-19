@@ -1,311 +1,328 @@
-/*------------------------------------CHAPTER 1 WORK------------------------------------*/
+// /*------------------------------------CHAPTER 1 WORK------------------------------------*/
 
-//Ex 1.2
+// //Ex 1.2
 
-console.log("Time to achieve big things...");
+// console.log("Time to achieve big things...");
 
-// Ex 1.4
+// // Ex 1.4
 
-let a = 10; //a value of 10 was assigned to the variable a
+// let a = 10; //a value of 10 was assigned to the variable a
 
-console.log(a);
+// console.log(a);
 
-/*
-This chapter introducs us to the 
-use of the JavaScript console as well
-as comments and how to 
-connect the JavaScript file to html
-*/
+// /*
+// This chapter introducs us to the 
+// use of the JavaScript console as well
+// as comments and how to 
+// connect the JavaScript file to html
+// */
 
-//Chapter Project
+// //Chapter Project
 
-let name = console.log("Will Ambe");
+// let name = console.log("Will Ambe");
 
-/*This is a multiple line
-comment which explains what the code line above does
-The code simply logs Will Ambe to the console of the browser*/
+// /*This is a multiple line
+// comment which explains what the code line above does
+// The code simply logs Will Ambe to the console of the browser*/
 
-/*-------------------------------------------END OF CHAPTER-----------------------------*/
-
-
-/*------------------------------------CHAPTER 2 WORK------------------------------------*/
-
-//Ex 2.1
-
-let str1 = typeof 'Laurence';
-let str2 = typeof 'Svekis';
-let val1 = typeof undefined;
-let val2 = typeof null;
-let myNum = typeof 1000;
-
-console.log(`str1 = ${str1} , str2 = ${str2} , val1 = ${val1} , val2 = ${val2} , myNum = ${myNum}`);
-
-//Ex 2.2
-
-let adjacent = prompt("Enter the adjacent of your right-angled triangle");
-let opposite = prompt("Enter the opposite of your right-angled triangle");
-let hypothenus = (adjacent**2 + opposite**2)**(0.5);
-
-console.log(`The hypothenus of your right-angled triangle is = ${hypothenus}`);
-
-//Ex 2.3
-
-let x = 21;
-let y = 6;
-let z = 3;
-
-y += x;
-x /= z;
-z %= y;
-
-console.log(`x = ${x}, y = ${y}, z = ${z}`);
-
-//Chapter Project1: Miles-Kilometers converter
-
-let distanceInMiles = 130;
-let unitMile = 1.60934;
-let distanceInKilometers = distanceInMiles * unitMile;
-console.log(`The distance of ${distanceInMiles} miles is equal to ${distanceInKilometers} kilometers`)
-
-//Chapter Project2 : BMI Calculator
-
-let heightInInch = 75;
-let weightInPounds = 135;
-let unitInch = 2.54;
-let unitKg = 2.2046;
-let heightInCentimeters = heightInInch * unitInch;
-let weightInKgs = weightInPounds / unitKg;
-let BMI = weightInKgs / ((heightInCentimeters)**2);
-
-console.log(`height in centimeters: ${heightInCentimeters}, weight in kilometers: ${weightInKgs}`);
-console.log(`your BMI is ${BMI}`);
+// /*-------------------------------------------END OF CHAPTER-----------------------------*/
 
 
-/*-------------------------------------------END OF CHAPTER-----------------------------*/
+// /*------------------------------------CHAPTER 2 WORK------------------------------------*/
 
-/*------------------------------------CHAPTER 3 WORK------------------------------------*/
+// //Ex 2.1
 
-//Ex 3.1
+// let str1 = typeof 'Laurence';
+// let str2 = typeof 'Svekis';
+// let val1 = typeof undefined;
+// let val2 = typeof null;
+// let myNum = typeof 1000;
 
-let shoppingList = ['Milk', 'Bread', 'Apples'];
-console.log("the shopping list has " , shoppingList.length ," items");
-shoppingList[1] = 'Banana';
-console.log("the shopping list items are " ,shoppingList);
+// console.log(`str1 = ${str1} , str2 = ${str2} , val1 = ${val1} , val2 = ${val2} , myNum = ${myNum}`);
 
-//Ex 3.2
-let shoppingList2 = [];
-shoppingList2.push('Milk', 'Bread', 'Apples');
-shoppingList2.splice(1,1, 'Banana', 'Eggs');
-shoppingList2.pop();
-shoppingList2.sort();
-console.log("Milk is index", shoppingList2.indexOf("Milk"));
-shoppingList2.splice(1,0, "Carrots", 'Lettuce');
-let newShoopingList = ['Juice', 'Pop'];
-let finalList = shoppingList2.concat(newShoopingList.concat(newShoopingList));
-console.log("the last index of Pop is ",finalList.lastIndexOf('Pop'));
-console.log("the shoppingList2 items are " , finalList);
+// //Ex 2.2
 
-//Ex 3.3
-let arrOfValues = [1, 2, 3];
-let newArr = [arrOfValues, arrOfValues, arrOfValues];
-console.log(newArr[0][1], newArr[1][1], newArr[2][1]);
+// let adjacent = prompt("Enter the adjacent of your right-angled triangle");
+// let opposite = prompt("Enter the opposite of your right-angled triangle");
+// let hypothenus = (adjacent**2 + opposite**2)**(0.5);
 
+// console.log(`The hypothenus of your right-angled triangle is = ${hypothenus}`);
 
-//Ex 3.4    
-let myCar = {
-    make : 'Toyota',
-    model : 'Carina',
-    year : 'Blue',
-    forSale : false
-};
-let str = "color";
-myCar.str = 'red';
-str = 'forSale';
-myCar[str] = true;
-console.log(myCar.make, myCar.model);
-console.log(myCar.forSale);
+// //Ex 2.3
 
-//Ex 3.5
-let people = {
-    friends:[]
-}
-let friend1 = {
-    firstName: 'Will',
-    lastName: 'Ambe',
-    Id : 1
-}
-let friend2 = {
-    firstName: 'John',
-    lestName: "Doe",
-    Id : 2
-}
-let friend3 = {
-    firstName: 'Blanshal',
-    lastName: 'Che',
-    Id : 3
-}
-people.friends.push(friend1, friend2, friend3);
+// let x = 21;
+// let y = 6;
+// let z = 3;
 
-console.log("my friends are",people);
+// y += x;
+// x /= z;
+// z %= y;
 
-//Chapter Project1 
+// console.log(`x = ${x}, y = ${y}, z = ${z}`);
 
-let thisArray = ['Laurence', 'Svekis', true, 35, null, undefined, {teest : true}];
-thisArray.shift();
-thisArray.pop();
-thisArray.unshift('FIRST');
-thisArray[4] = 'hello wolrd';
-thisArray[3] = 'MIDDLE';
-thisArray.push('LAST');
-console.log(thisArray);
+// //Chapter Project1: Miles-Kilometers converter
 
-//Chapter 3 Project2
+// let distanceInMiles = 130;
+// let unitMile = 1.60934;
+// let distanceInKilometers = distanceInMiles * unitMile;
+// console.log(`The distance of ${distanceInMiles} miles is equal to ${distanceInKilometers} kilometers`)
 
-let inventory = [];
-let item1 = {
-    name : 'watch',
-    model : 'rolex',
-    cost : 200,
-    quantity : 5
-}
-let item2 = {
-    name : 'iPhone',
-    model : 'iPhone 12 pro max',
-    cost : 500,
-    quantity : 10
-}
-let item3 = {
-    name : 'laptop',
-    model : 'Lenovo ThinkPad',
-    quantity : 2
-}
+// //Chapter Project2 : BMI Calculator
 
-inventory.push(item1, item2, item3);
+// let heightInInch = 75;
+// let weightInPounds = 135;
+// let unitInch = 2.54;
+// let unitKg = 2.2046;
+// let heightInCentimeters = heightInInch * unitInch;
+// let weightInKgs = weightInPounds / unitKg;
+// let BMI = weightInKgs / ((heightInCentimeters)**2);
 
-console.log(inventory[2].quantity);
-console.log(inventory[1].model);
-console.log(inventory[0].cost);
-
-/*-------------------------------------------END OF CHAPTER-----------------------------*/
+// console.log(`height in centimeters: ${heightInCentimeters}, weight in kilometers: ${weightInKgs}`);
+// console.log(`your BMI is ${BMI}`);
 
 
-/*------------------------------------CHAPTER 4 WORK------------------------------------*/
+// /*-------------------------------------------END OF CHAPTER-----------------------------*/
 
-// Ex 4.1
-let bool = false;
-console.log(bool);
-if(bool){
-    console.log("You are really lazy dude, got to start working now so as to start earning ASAP");
-}
-if (!bool){
-    console.log("That's good keep up with the spirit consistency is the key");
-}
+// /*------------------------------------CHAPTER 3 WORK------------------------------------*/
 
-//Ex 4.2
+// //Ex 3.1
 
-let usrAge = prompt("Please enter your age");
- usrAge = Number(usrAge);
- let msgVariable;
- if (usrAge => 21){
-    msgVariable = "Welcome to our palace, feel free to command any wine of your choice.";
- }
- else if (usrAge => 19){
-    msgVariable = "Welcome to our palace, you are free to command any non alcoholic drink of your choice.";
- }
- else {
-    msgVariable = "Sorry we can't permit you into our palace since you are below 19 years which is the minimum age for any individual entering here.";
- }
- console.log(msgVariable);
+// let shoppingList = ['Milk', 'Bread', 'Apples'];
+// console.log("the shopping list has " , shoppingList.length ," items");
+// shoppingList[1] = 'Banana';
+// console.log("the shopping list items are " ,shoppingList);
 
- //Ex 4.3
+// //Ex 3.2
+// let shoppingList2 = [];
+// shoppingList2.push('Milk', 'Bread', 'Apples');
+// shoppingList2.splice(1,1, 'Banana', 'Eggs');
+// shoppingList2.pop();
+// shoppingList2.sort();
+// console.log("Milk is index", shoppingList2.indexOf("Milk"));
+// shoppingList2.splice(1,0, "Carrots", 'Lettuce');
+// let newShoopingList = ['Juice', 'Pop'];
+// let finalList = shoppingList2.concat(newShoopingList.concat(newShoopingList));
+// console.log("the last index of Pop is ",finalList.lastIndexOf('Pop'));
+// console.log("the shoppingList2 items are " , finalList);
 
- let ID = true;
-  !ID? console.log("Welcome sir how can we help you today") : console.log("Sorry but we can\'t let you in due to authentication failure.");
+// //Ex 3.3
+// let arrOfValues = [1, 2, 3];
+// let newArr = [arrOfValues, arrOfValues, arrOfValues];
+// console.log(newArr[0][1], newArr[1][1], newArr[2][1]);
 
-//4.4
 
-let rndmNumber = Math.floor(Math.random() * 6);
-let question = prompt("Ask any question...");
-let answer;
+// //Ex 3.4    
+// let myCar = {
+//     make : 'Toyota',
+//     model : 'Carina',
+//     year : 'Blue',
+//     forSale : false
+// };
+// let str = "color";
+// myCar.str = 'red';
+// str = 'forSale';
+// myCar[str] = true;
+// console.log(myCar.make, myCar.model);
+// console.log(myCar.forSale);
 
-switch (rndmNumber) {
-    case 0: answer ="Seek first the kingdom of God and it's righteousness and any other thing shall be granted to you.";
-           break;
-    case 1: answer ="That isn't important for the moment, ";
-    break;
-    case 2: answer ="Don't even dream about that.";
-     break;
-    case 3: answer ="LOL you think you can ever, hahahaha";
-     break;
-    case 4: answer ="You way wowo so want do wety witam?";
-     break;
-    case 5: answer ="Keep on dreaming";
-     break;
-    }
+// //Ex 3.5
+// let people = {
+//     friends:[]
+// }
+// let friend1 = {
+//     firstName: 'Will',
+//     lastName: 'Ambe',
+//     Id : 1
+// }
+// let friend2 = {
+//     firstName: 'John',
+//     lestName: "Doe",
+//     Id : 2
+// }
+// let friend3 = {
+//     firstName: 'Blanshal',
+//     lastName: 'Che',
+//     Id : 3
+// }
+// people.friends.push(friend1, friend2, friend3);
 
-    console.log("You asked", question, "Your answer is", answer);
+// console.log("my friends are",people);
 
-    //Chapter Project 1
+// //Chapter Project1 
 
-let userNumber = Number(prompt("Enter a number"));    
-let myNumber = 5;
-if (userNumber < myNumber){
-    console.log(userNumber + " is smaller than " + myNumber);
-}
-else if (userNumber > myNumber){
-    console.log(userNumber + " is greater than " + myNumber);
-}
-else{
-    console.log(userNumber + " is equal to " + myNumber);
-}
+// let thisArray = ['Laurence', 'Svekis', true, 35, null, undefined, {teest : true}];
+// thisArray.shift();
+// thisArray.pop();
+// thisArray.unshift('FIRST');
+// thisArray[4] = 'hello wolrd';
+// thisArray[3] = 'MIDDLE';
+// thisArray.push('LAST');
+// console.log(thisArray);
 
-// Chapter Project 2
+// //Chapter 3 Project2
 
-let usrName = prompt("Who do you think my friend is?");
-// let myFriends = ['Smith', 'Liza', 'Grace', 'Jospen', 'Jerry', 'Pride'];
-    switch (usrName){
-        case 'Smith': console.log("A good all friend of mine"); 
-        break;
-        case 'Liza': console.log("A sweet and lovely friend of mine"); 
-        break;
-        case 'Grace': console.log("The latest Bob Marley in town"); 
-        break;
-        case 'Jospen': console.log("My gee"); 
-        break;
-        case 'Jerry': console.log("My knonji friend"); 
-        break;
-        case 'Pride': console.log("A friend and a brother"); 
-        break;
-        default: console.log("Either I didn't mention that person or the person isn't my friend"); 
-    }
+// let inventory = [];
+// let item1 = {
+//     name : 'watch',
+//     model : 'rolex',
+//     cost : 200,
+//     quantity : 5
+// }
+// let item2 = {
+//     name : 'iPhone',
+//     model : 'iPhone 12 pro max',
+//     cost : 500,
+//     quantity : 10
+// }
+// let item3 = {
+//     name : 'laptop',
+//     model : 'Lenovo ThinkPad',
+//     quantity : 2
+// }
 
-    //Chapter Project 3
-    let game = ["Rock", 'Paper', 'Scissors'];
-    let playerSelection = Math.floor(Math.random()*3);
-    let computerSelection = Math.floor(Math.random()*3);
-    let gameResults;
-   if (playerSelection === computerSelection) {
-    gameResults = "It's a tie";
-   }
-   else if (playerSelection < computerSelection) {
-    if ((playerSelection === 0 && computerSelection === 2)){
-        gameResults = "You win!";
-    }
-    else{
-        gameResults = "You lose!";
-    }
-   }
-   else{
-    if (playerSelection === 2 && computerSelection == 0){
-        gameResults = "You lose!";
-    }
-    else{
-        gameResults = "You win!";
-    }
-   }
+// inventory.push(item1, item2, item3);
+
+// console.log(inventory[2].quantity);
+// console.log(inventory[1].model);
+// console.log(inventory[0].cost);
+
+// /*-------------------------------------------END OF CHAPTER-----------------------------*/
+
+
+// /*------------------------------------CHAPTER 4 WORK------------------------------------*/
+
+// // Ex 4.1
+// let bool = false;
+// console.log(bool);
+// if(bool){
+//     console.log("You are really lazy dude, got to start working now so as to start earning ASAP");
+// }
+// if (!bool){
+//     console.log("That's good keep up with the spirit consistency is the key");
+// }
+
+// //Ex 4.2
+
+// let usrAge = prompt("Please enter your age");
+//  usrAge = Number(usrAge);
+//  let msgVariable;
+//  if (usrAge => 21){
+//     msgVariable = "Welcome to our palace, feel free to command any wine of your choice.";
+//  }
+//  else if (usrAge => 19){
+//     msgVariable = "Welcome to our palace, you are free to command any non alcoholic drink of your choice.";
+//  }
+//  else {
+//     msgVariable = "Sorry we can't permit you into our palace since you are below 19 years which is the minimum age for any individual entering here.";
+//  }
+//  console.log(msgVariable);
+
+//  //Ex 4.3
+
+//  let ID = true;
+//   !ID? console.log("Welcome sir how can we help you today") : console.log("Sorry but we can\'t let you in due to authentication failure.");
+
+// //4.4
+
+// let rndmNumber = Math.floor(Math.random() * 6);
+// let question = prompt("Ask any question...");
+// let answer;
+
+// switch (rndmNumber) {
+//     case 0: answer ="Seek first the kingdom of God and it's righteousness and any other thing shall be granted to you.";
+//            break;
+//     case 1: answer ="That isn't important for the moment, ";
+//     break;
+//     case 2: answer ="Don't even dream about that.";
+//      break;
+//     case 3: answer ="LOL you think you can ever, hahahaha";
+//      break;
+//     case 4: answer ="You way wowo so want do wety witam?";
+//      break;
+//     case 5: answer ="Keep on dreaming";
+//      break;
+//     }
+
+//     console.log("You asked", question, "Your answer is", answer);
+
+//     //Chapter Project 1
+
+// let userNumber = Number(prompt("Enter a number"));    
+// let myNumber = 5;
+// if (userNumber < myNumber){
+//     console.log(userNumber + " is smaller than " + myNumber);
+// }
+// else if (userNumber > myNumber){
+//     console.log(userNumber + " is greater than " + myNumber);
+// }
+// else{
+//     console.log(userNumber + " is equal to " + myNumber);
+// }
+
+// // Chapter Project 2
+
+// let usrName = prompt("Who do you think my friend is?");
+// // let myFriends = ['Smith', 'Liza', 'Grace', 'Jospen', 'Jerry', 'Pride'];
+//     switch (usrName){
+//         case 'Smith': console.log("A good all friend of mine"); 
+//         break;
+//         case 'Liza': console.log("A sweet and lovely friend of mine"); 
+//         break;
+//         case 'Grace': console.log("The latest Bob Marley in town"); 
+//         break;
+//         case 'Jospen': console.log("My gee"); 
+//         break;
+//         case 'Jerry': console.log("My knonji friend"); 
+//         break;
+//         case 'Pride': console.log("A friend and a brother"); 
+//         break;
+//         default: console.log("Either I didn't mention that person or the person isn't my friend"); 
+//     }
+
+//     //Chapter Project 3
+//     let game = ["Rock", 'Paper', 'Scissors'];
+//     let playerSelection = Math.floor(Math.random()*3);
+//     let computerSelection = Math.floor(Math.random()*3);
+//     let gameResults;
+//    if (playerSelection === computerSelection) {
+//     gameResults = "It's a tie";
+//    }
+//    else if (playerSelection < computerSelection) {
+//     if ((playerSelection === 0 && computerSelection === 2)){
+//         gameResults = "You win!";
+//     }
+//     else{
+//         gameResults = "You lose!";
+//     }
+//    }
+//    else{
+//     if (playerSelection === 2 && computerSelection == 0){
+//         gameResults = "You lose!";
+//     }
+//     else{
+//         gameResults = "You win!";
+//     }
+//    }
     
-    console.log("The player choosed "+game[playerSelection], "and the computer choosed "+game[computerSelection], "hence "+gameResults);
+//     console.log("The player choosed "+game[playerSelection], "and the computer choosed "+game[computerSelection], "hence "+gameResults);
 
+/*-------------------------------------------END OF CHAPTER-----------------------------*/
+
+/*------------------------------------CHAPTER 5 WORK------------------------------------*/
+
+//Ex 5.1
+// let maxValue = 5;
+// let solution = Math.floor(Math.random() * (maxValue + 1));
+// console.log(solution);
+// let evaluation = false;
+// let guess = Number(prompt("Guess a number in the range of 1 to 5"));
+// while (solution === guess){
+    
+//     console.log(!evaluation, "congratulation your guess was correct");
+// }
+
+
+/*-------------------------------------------END OF CHAPTER-----------------------------*/
 
 /*------------------------------------CHAPTER 6 WORK------------------------------------*/
 
@@ -600,21 +617,21 @@ let usrName = prompt("Who do you think my friend is?");
 //  let encodeUri= encodeURIComponent(url);
 //  console.log(encodeUri);
 
-// //  let arr = ["Will ",20,21, 'James ', true, false];
-// //  let printOut = (element, index) => console.log(element, " is at index ", index);
-// //  arr.forEach(printOut);
-// //  console.log(typeof arr[1]);
-// //  let sort = (element, index) => {
-// //     // return typeof element == 'number';
-// //     return typeof element == "boolean";
-// //  }
-// //  console.log(arr.filter(sort));
-// //  console.log(arr.every(sort))
-// //  newArr = arr.map(x => x + 0);
-// //  console.log(arr);
-// //  console.log(newArr);
+//  let arr = ["Will ",20,21, 'James ', true, false];
+//  let printOut = (element, index) => console.log(element, " is at index ", index);
+//  arr.forEach(printOut);
+//  console.log(typeof arr[1]);
+//  let sort = (element, index) => {
+//     // return typeof element == 'number';
+//     return typeof element == "boolean";
+//  }
+//  console.log(arr.filter(sort));
+//  console.log(arr.every(sort))
+//  newArr = arr.map(x => x + 0);
+//  console.log(arr);
+//  console.log(newArr);
 
-// // Ex8.2
+// Ex8.2
 
 // let peopleNames = ['Elisabeth', "Blanshal", 'Will', 'Smith', 'Will', 'Megane', 'Blanshal', 'Ronda', 'Ronda', 'Ambe'];
 
@@ -643,7 +660,20 @@ let usrName = prompt("Who do you think my friend is?");
 // console.log(newNumbers);
 // console.log(newNumbers2);
 
+//Ex 8.4
 
+let mixString = "thIs wiLl be capiTalized for eaCh woRd";
+let convertString = function (str){
+    str = str.toLowerCase();
+    let capVal =[];
+    let toWords = str.split(" ");
+    toWords.forEach(word => {
+        let normalize = word.slice(0,1).toUpperCase().concat(word.slice(1));
+        capVal.push (normalize);
+        })
+        return capVal.join(' ');
+}
+console.log(convertString(mixString));
 
 // let s1 = 'I\'m ';
 // let s2 = 'getting ';
@@ -656,3 +686,7 @@ let usrName = prompt("Who do you think my friend is?");
 // let searchStr = "When I see my fellow, I say hello";
 // let pos = searchStr.search("lo");
 // console.log(pos)
+// console.log(s5);
+// let s7 = s5.charAt(4).toUpperCase().concat(s5.slice(5));
+// let s8 = s5.slice(0, 4).concat(s7);
+// console.log (s8);
