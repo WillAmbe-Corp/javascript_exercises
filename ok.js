@@ -662,18 +662,34 @@
 
 //Ex 8.4
 
-let mixString = "thIs wiLl be capiTalized for eaCh woRd";
-let convertString = function (str){
-    str = str.toLowerCase();
-    let capVal =[];
-    let toWords = str.split(" ");
-    toWords.forEach(word => {
-        let normalize = word.slice(0,1).toUpperCase().concat(word.slice(1));
-        capVal.push (normalize);
-        })
-        return capVal.join(' ');
-}
-console.log(convertString(mixString));
+// let mixString = "thIs wiLl be capiTalized for eaCh woRd";
+// let convertString = function (str){
+//     str = str.toLowerCase();
+//     let capVal =[];
+//     let toWords = str.split(" ");
+//     toWords.forEach(word => {
+//         let normalize = word.slice(0,1).toUpperCase().concat(word.slice(1));
+//         capVal.push (normalize);
+//         })
+//         return capVal.join(' ');
+// }
+// console.log(convertString(mixString));
+
+//Ex8.5
+
+let thisString = "I love JavaScript";
+let lowString = thisString.toLowerCase();
+let vowels = ['a', 'e', 'i', 'o', 'u'];
+vowels.forEach((letter, index) => {
+    console.log(letter, index);
+    lowString = lowString.replaceAll(letter, index);
+    // return newString;
+});
+console.log(lowString);
+
+// let x = 1.23156;
+// let newX = x.toFixed(3);
+// console.log(x, newX);
 
 // let s1 = 'I\'m ';
 // let s2 = 'getting ';
