@@ -677,32 +677,87 @@
 
 //Ex8.5
 
-let thisString = "I love JavaScript";
-let lowString = thisString.toLowerCase();
-let vowels = ['a', 'e', 'i', 'o', 'u'];
-vowels.forEach((letter, index) => {
-    console.log(letter, index);
-    lowString = lowString.replaceAll(letter, index);
-    // return newString;
-});
-console.log(lowString);
+// let thisString = "I love JavaScript";
+// let lowString = thisString.toLowerCase();
+// let vowels = ['a', 'e', 'i', 'o', 'u'];
+// vowels.forEach((letter, index) => {
+//     console.log(letter, index);
+//     lowString = lowString.replaceAll(letter, index);
+//     // return newString;
+// });
+// console.log(lowString);
 
-// let x = 1.23156;
-// let newX = x.toFixed(3);
-// console.log(x, newX);
+// Ex 8.6
 
-// let s1 = 'I\'m ';
-// let s2 = 'getting ';
-// let s3 = 'more comfortable ';
-// let s4 =' with JavaScript';
-// let s5 =( s1.concat(s2,s3,s4));
+let val = 5.7;
+console.log(
+    " The ceil value is: "+ Math.ceil(val),"\n",
+    "The floor value is: "+ Math.floor(val),"\n",
+    "The round value is: "+ Math.round(val),"\n"
+);
+console.log(Math.random());
+console.log(Math.floor(Math.random()*11));
+console.log(Math.floor(Math.random()*10)+1);
+console.log(Math.floor(Math.random()*100)+1);
+let rdmNumber = function(max, min) {
+    return Math.floor(Math.random() * (max - min) + min);
+}
+for (let i=0; i < 100; i++) {
+    console.log(Math.floor(Math.random(+1)*101));
+}
+rdmNumber(100, 1);
 
-// let s6 = s2.split('');
-// console.log(s6);
-// let searchStr = "When I see my fellow, I say hello";
-// let pos = searchStr.search("lo");
-// console.log(pos)
-// console.log(s5);
-// let s7 = s5.charAt(4).toUpperCase().concat(s5.slice(5));
-// let s8 = s5.slice(0, 4).concat(s7);
-// console.log (s8);
+//Ex 8.7
+
+// let date = new Date();
+let newDate = (new Date(2024, 3, 13, 0, 0, 0));
+console.log(newDate);
+let months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+let date = newDate.getDate();
+let year = newDate.getFullYear();
+let month = newDate.getMonth();
+let mydate = `${months[month]} ${date} ${year}`;
+console.log(mydate);
+
+//Chapter Project 1 Word Scramble
+
+let string = "JavaScript";
+let stringWord = function(value){
+    let max = value.length;
+    let tempString = "";
+    for (let i = 0; i < max; i++){
+        console.log(value.length);
+        let index = Math.floor(Math.random() * value.length);
+        tempString += value[index];
+        // string -= value[index];
+        console.log(`tempString: ${tempString}`);
+        value = value.slice(0, index) + value.slice(index + 1);
+        console.log(value);
+    }
+    return tempString;
+}
+console.log(stringWord(string));
+
+// Chapter  Project 2 CountDown Timer
+
+let myBirthday = new Date(2024, 3, 13, 0, 0, 0, 0,);
+let countDown = function(){
+   let total = Date.parse(myBirthday) - new Date;
+   let days = Math.floor(total / (1000 * 60 * 60 * 24));//Converts milliseconds to days
+   let hours = Math.floor(total / (1000 * 60 * 60 * 24) % 24);//converts milliseconds to hours
+   let mins = Math.floor(total / (1000 / 60) % 60);//Converts milliseconds to minutes
+   let secs = Math.floor(total / (1000) % 60);//Converts milliseconds to seconds
+   return {days , hours , mins , secs};
+}
+
+let timeOut = function(){ //This function is used to run setTimeout every second
+    let temp = countDown();
+    let outputValue = "My Birthday is in ";
+    for (let propert in temp) {
+        outputValue += (temp[propert]+ " " + propert + " "); //
+    }
+    console.log(outputValue);
+    setTimeout(timeOut, 1000);
+}
+timeOut();
+
