@@ -7,12 +7,54 @@
     <title>Document</title>
 </head>
 <body>
-    <p>Hello JavaScropt</p>
+    <div class="input">
+        <h1>Hello</h1>
+        <div>Test</div>
+        <ul>
+            <li id="one"></li>
+            <li id="red"></li>
+        </ul>
+        <div>Test</div>
+    </div>
+    <p class="output">Hello JavaScropt</p>
     <input onchange="go(this)"></input>
  <script>
+    //Ex 9.3
  function go(e) {
  eval(e.value);
  }
+
+ let output = document.querySelector('.output');
+ output.textContent = "Hello I'm coding in JavaScript";
+ output.classList.add ('red');
+ output.id = "tester";
+ let body = document.querySelector('body');
+ body.style.backgroundColor = "red";
+ console.log(document.URL);
+ output.textContent = document.URL;
+
+
+
+ //Chapter 9 Project
+
+ let input = document.querySelector('input');
+ let mainList = document.querySelector('ul');
+ mainList.id = "mainList";
+ let div = document.querySelectorAll('div');
+ for ( let i =0; i < div.length; i++ ) {
+    console.log(div[i].tagName);
+    div[i].id = "id" + (i + 1);
+    if (i % 2) {
+        div[i].style.color = "red";
+    }
+    else{
+        div[i].style.color = "blue";
+    }
+
+ }
+
+ 
+
  </script>
 
     <script text="text/javascript" src="ok.js"></script>   

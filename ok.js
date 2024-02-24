@@ -736,7 +736,7 @@ let stringWord = function(value){
     }
     return tempString;
 }
-console.log(stringWord(string));
+// console.log(stringWord(string));
 
 // Chapter  Project 2 CountDown Timer
 
@@ -759,5 +759,5 @@ let timeOut = function(){ //This function is used to run setTimeout every second
     console.log(outputValue);
     setTimeout(timeOut, 1000);
 }
-timeOut();
+// timeOut();
 
